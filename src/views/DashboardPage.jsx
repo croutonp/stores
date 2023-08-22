@@ -51,7 +51,7 @@ const DashboardPage = () => {
                             <tr key={eachStore._id}>
                                 <td><Link to={`/stores/${eachStore._id}`}> {eachStore.store}</Link></td>
                                 <td>{eachStore.number}</td>
-                                <td>{eachStore.isOpen?"Open":"Closed"}</td>
+                                <td>{eachStore.isOpen?"True":"False"}</td>
             
                                 <td>
                                      <button onClick={()=>{handleDelete(eachStore._id)}} >Delete</button>
